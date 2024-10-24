@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобильдер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 100px auto;
+            height: 100vh;
+        }
+        header {
+            grid-column: span 2;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            grid-column: span 2;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        marquee {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #ff9800;
+            color: white;
+            padding: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <h1>Автомобильдер</h1>
+            <marquee>Автомобильдерге арналған керемет ұсыныстар! Қазір сатып алыңыз!</marquee>
+        </header>
+
+        <nav>
+            <h2>Мәзір</h2>
+            <ul>
+                <li><a href="#sedan">Седан</a></li>
+                <li><a href="#suv">Жол талғамайтын көліктер (SUV)</a></li>
+                <li><a href="#sportcar">Спорттық автомобильдер</a></li>
+                <li><a href="#electric">Электромобильдер</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2 id="sedan">Седан</h2>
+            <img src="https://avatars.mds.yandex.net/i?id=f235d7435a80f78b30e160aea6659984dfcdd2f8-5310620-images-thumbs&n=13" alt="Седан">
+            <p>Седан - жолаушыларды ыңғайлы тасымалдауға арналған кең автомобиль. Оларда әдетте төрт есік және артқы жүксалғыш болады.</p>
+
+            <h2 id="suv">Жол талғамайтын көліктер (SUV)</h2>
+            <img src="https://avatars.mds.yandex.net/i?id=edb2b5466bead82cbb81bf3ce5c9d8080f84dd58-5234070-images-thumbs&n=13" alt="Жол талғамайтын көлік (SUV)">
+            <p>SUV көліктері - үлкен, қуатты және жолсыз жерлерде жүре алатын автомобильдер. Олар саяхатқа және қиын жолдар үшін қолайлы.</p>
+
+            <h2 id="sportcar">Спорттық автомобильдер</h2>
+            <img src="https://avatars.mds.yandex.net/i?id=8a138f6e2efea213a4ee30a7f8b9a1b1ec4da4e6-5885354-images-thumbs&n=13" alt="Спорттық автомобильдер">
+            <p>Спорттық автомобильдер жылдамдық пен қуатқа бағытталған, олар жоғары жылдамдықта жүру үшін жасалған.</p>
+
+            <h2 id="electric">Электромобильдер</h2>
+            <img src="https://avatars.mds.yandex.net/i?id=9587ee2aba822b7a6dbcefb072bb2c566bb644cd-13240502-images-thumbs&n=13" alt="Электромобильдер">
+            <p>Электромобильдер электр қуатымен жүретін көліктер болып табылады. Олар экологиялық таза және жанармайдың орнына электр қуатын пайдаланады.</p>
+        </section>
+    </div>
+
+</body>
+</html>
